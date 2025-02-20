@@ -1,0 +1,6 @@
+Flask==2.2.2
+twilio==7.17.0
+google-cloud-texttospeech==2.16.4
+requests==2.31.0
+aiosmtpd==1.4.6
+
