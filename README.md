@@ -1,42 +1,70 @@
-📞 AI Voice Chatbot - Customer Interaction & Appointment Scheduler
+# 📞 AI Voice Chatbot – Customer Interaction & Appointment Scheduler
+## 🌟 Overview
+This project is an AI-powered voice chatbot designed to manage customer inquiries, product comparisons, and appointment scheduling through automated voice interactions.
 
-🌟 Overview
+It integrates:
 
-This project is an AI-powered voice chatbot designed to handle customer inquiries, product comparisons, and appointment scheduling through automated voice interactions. The chatbot utilizes Twilio for call handling, Gemini API for AI responses, and Google Cloud Text-to-Speech for converting responses into audio. This system enhances customer service efficiency by automating interactions and reducing response time.
+-Twilio for call handling
+-Gemini API for intelligent responses
+-Google Cloud Text-to-Speech for voice output
 
-🚀 Features
+The goal is to enhance customer service by automating conversations and reducing response times.
 
-✅ Voice Call Handling – Uses Twilio to receive and process voice calls.✅ Speech-to-Text Processing – Converts user speech to text for intent recognition.✅ AI-Powered Responses – Processes user queries using Gemini API.✅ Text-to-Speech Conversion – Generates spoken responses using Google Cloud Text-to-Speech.✅ Appointment Scheduling – Allows customers to book appointments.✅ Email Notifications – Sends confirmation emails via SMTP server.✅ Flask API Integration – Manages request handling and response delivery.
+---
+## 🚀 Features
+✅ Voice Call Handling – Receive and process voice calls using Twilio.
 
-🏗️ Architecture & Methodology
+✅ Speech-to-Text Processing – Convert user speech into text for AI interpretation.
 
-1️⃣ Call Reception – User initiates a call, which is forwarded to the Flask-based backend via Twilio.2️⃣ Speech Processing – Extracts speech and determines intent (query or appointment request).3️⃣ AI Interaction – Queries are sent to Gemini API for response generation.4️⃣ Text-to-Speech Conversion – Converts AI responses into an audio format.5️⃣ Response Delivery – Plays the generated audio response back to the caller.6️⃣ Appointment Scheduling – If an appointment is requested, the system logs details and sends an email confirmation.
+✅ AI-Powered Responses – Use Gemini API to understand and answer queries.
 
-🛠️ Technologies Used
+✅ Text-to-Speech Conversion – Reply with natural-sounding audio via Google Cloud TTS.
 
-Backend: Flask (Python)
+✅ Appointment Scheduling – Log customer appointments and send confirmations.
 
-Voice API: Twilio
+✅ Email Notifications – Trigger email confirmations via SMTP.
 
-AI Processing: Gemini API
+✅ Flask API Integration – Handle backend request/response flow.
 
-Text-to-Speech: Google Cloud Text-to-Speech
+---
 
-Email Notifications: SMTP Server
+## 🏗️ Architecture & Methodology
+-Call Reception – User initiates a voice call via Twilio → forwarded to Flask backend
 
-Logging & Debugging: Flask Logging System
+-Speech Processing – User speech is transcribed and intent (e.g., query or appointment) is detected
 
-🔄 API Endpoints
+-AI Interaction – Gemini API is queried to generate contextual responses
 
-/incoming_call – Handles incoming Twilio calls.
+-Text-to-Speech – Response is converted to audio using Google Cloud Text-to-Speech
 
-/process_speech – Processes user speech and extracts intent.
+-Response Delivery – Audio is streamed back to the caller
 
-/generate_response – Queries Gemini API and converts responses into speech.
+-Appointment Scheduling – Appointment details are logged and an email is sent to confirm
 
-/schedule_appointment – Captures appointment details and sends email confirmations.
+---
+## 🛠️ Technologies Used
+Component	Tech Stack
+Backend	Flask (Python)
+Voice API	Twilio
+AI Engine	Gemini API
+Text-to-Speech	Google Cloud Text-to-Speech
+Email Delivery	SMTP Server
+Logging	Flask Logging System
 
-🎯 Results & Impact
+---
+## 🔄 API Endpoints
+Endpoint	Description
+/incoming_call	Handles incoming calls from Twilio
+/process_speech	Transcribes user speech and extracts intent
+/generate_response	Gets AI response and converts it to audio
+/schedule_appointment	Logs appointment and sends email confirmation
 
-📌 Automates customer interactions, reducing workload on support teams.📌 Enhances response efficiency with AI-driven conversational intelligence.📌 Provides a seamless experience by integrating voice recognition, AI, and scheduling in one system.📌 Improves customer satisfaction with quick and accurate responses.
+---
+## 🎯 Results & Impact
+📌 Automates interactions and reduces human support workload
 
+📌 Enhances efficiency through AI-driven voice communication
+
+📌 Improves user experience by combining voice, AI, and scheduling
+
+📌 Increases customer satisfaction with accurate, real-time responses
